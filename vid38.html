@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            background-color: aqua;
+        }
+
+        nav li {
+            margin: 0 23px;
+            padding: auto;
+            text-decoration: none;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <li>home</li>
+        <li>about</li>
+        <li>contact us</li>
+
+    </nav>
+</body>
+<script>
+    // how to change color to java scripts
+    document.getElementsByTagName("nav")[0].firstElementChild.style.color="red"
+    document.getElementsByTagName("nav")[0].firstElementChild.style.color="green"
+    document.getElementsByTagName("nav")[0].lastElementChild.style.color="green"
+    // how to change back groud color 
+    Array.from (document.getElementsByTagName("li")).forEach((element) => {
+      element.style.background = "red";
+    });
+    let array =[1,2, 3,4,];
+    console.log("result",array[3])
+    
+</script>
+
+</html>
